@@ -1,0 +1,13 @@
+#List of the servers where commands will be blocked
+servers:
+- lobby1
+- security
+#Message sent when the people can not send the message
+msg: "&cYou can't do this in this server"
+#Do you want the chat to be blocked too?
+block-chat: true
+#List of allowed commands
+whitelist:
+- login
+- register
+- yolo
