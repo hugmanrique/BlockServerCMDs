@@ -1,3 +1,4 @@
 name: BlockServerCMDs
 author: Hugmanrique
-version: ${project.}
+version: ${project.version}
+main: me.hugmanrique.blockservercmds.Main
