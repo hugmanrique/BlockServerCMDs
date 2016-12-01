@@ -14,6 +14,8 @@ import java.io.*;
  * @since 30/11/2016
  */
 public class Main extends Plugin {
+    private static final String CONFIG_FILE = "config.yml";
+
     private Configuration config;
 
     @Override
@@ -30,13 +32,13 @@ public class Main extends Plugin {
             getDataFolder().mkdir();
         }
 
-        File file = new File(getDataFolder(), "config.yml");
+        File file = new File(getDataFolder(), CONFIG_FILE);
 
         if (!file.exists()) {
             try {
                 file.createNewFile();
 
-                try (InputStream in = getResourceAsStream("config.yml");
+                try (InputStream in = getResourceAsStream(CONFIG_FILE);
                      OutputStream out = new FileOutputStream(file)) {
                     ByteStreams.copy(in, out);
                 }
