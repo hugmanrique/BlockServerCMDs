@@ -25,11 +25,6 @@ public class Main extends Plugin {
         new PlayerListener(this);
     }
 
-    @Override
-    public void onDisable() {
-
-    }
-
     private boolean loadConfig() {
         if (!getDataFolder().exists()) {
             getDataFolder().mkdir();
