@@ -80,6 +80,6 @@ public class PlayerListener implements Listener {
         }
 
         e.setCancelled(true);
-        player.sendMessage();
+        player.sendMessage(this.message);
     }
 }
